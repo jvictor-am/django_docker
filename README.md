@@ -16,13 +16,13 @@ Primeiro, clone o projeto:
 ### via HTTPS
 
 ```bash
-git clone https://github.com/abc.git
+git clone https://github.com/jvictor-am/django_docker.git
 ```
 
 ### via SSH
 
 ```bash
-git clone git@github.com:def/abc.git
+git clone git@github.com:jvictor-am/django_docker.git
 ```
 
 Agora, rode o seguinte comando:
