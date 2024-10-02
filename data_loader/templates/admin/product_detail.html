@@ -1,0 +1,15 @@
+<!-- data_loader/templates/admin/product_detail.html -->
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<h1>Detalhes do Produto: <strong>{{ product.name }}</strong></h1>
+<ul>
+    <li><strong>Preço:</strong> R$ {{ product.price }}</li>
+    <li><strong>Estoque:</strong> {{ product.stock }}</li>
+    <li><strong>Criado em:</strong> {{ product.created_at }}</li>
+</ul>
+
+<h2>Ações</h2>
+<a href="{% url 'admin:data_loader_product_change' product.id %}">Editar Produto</a><br />
+<a href="{% url 'admin:data_loader_product_changelist' %}">Voltar para a lista de produtos</a>
+{% endblock %}
